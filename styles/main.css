@@ -2,3 +2,7 @@ nav .navbar ul {
   display: flex;
   list-style: none;
 }
+
+.links {
+  font-weight: bold;
+}
