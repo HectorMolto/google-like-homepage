@@ -1,46 +1,78 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
     <title>Google</title>
-    <link rel="stylesheet" type="text/css" href="./styles/main.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/reset.min.css" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css"/>
   </head>
   <body>
     <nav class="navbar">
-      <ul>
-        <li><a href="#nowhere" title="Gmail">Gmail</a></li>
-        <li><a href="#nowhere" title="Imagenes">Imágenes</a></li>
-        <li><a href="#nowhere" title="Apps">Apps</a></li>
-        <li><a href="#nowhere" title="Notificaciones">Notificaciones</a></li>
-        <li><a href="#nowhere" title="User profile">User</a></li>
+      <ul class="navbar__menu toolbar toolbar--opacity-75">
+        <li>
+          <a class="toolbar__link" href="#nowhere" title="Gmail">Gmail</a>
+        </li>
+        <li>
+          <a class="toolbar__link" href="#nowhere" title="Imagenes">Imágenes</a>
+        </li>
+        <li>
+          <a class="toolbar__link" href="#nowhere" title="Apps">Apps</a>
+        </li>
+        <li>
+          <a class="toolbar__link" href="#nowhere" title="Notificaciones">Notificaciones</a>
+        </li>
+        <li>
+          <a class="toolbar__link" href="#nowhere" title="User profile">User</a>
+        </li>
       </ul>
-    </nav>
+    </nav><br>
     <div class="main">
-      <img src="https://www.google.es/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google's logo" class="logo">
-      <input type="textbox" name="searchbox">
-      <input type="button" name="search" value="Buscar con Google">
-      <input type="button" name="getlucky" value="Voy a tener suerte">
-      <div class="links">Ofrecido por Google en:
+        <img class="main__logo" src="https://www.google.es/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google's logo">
+      <form class="main__form search">
+        <input type="textbox" class="search__searchbox" name="searchbox"><br>
+        <input type="button" class="search__btn-search" name="button search" value="Buscar con Google">
+        <input type="button" class="search__btn-lucky" name="get lucky" value="Voy a tener suerte">
+      </form>
+      <div class="main__links">Ofrecido por Google en:
         <a href="https://www.google.es/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiuhPCZkaDXAhUHcRQKHWtSCVwQ2ZgBCAw&url=https%3A%2F%2Fwww.google.es%2Fsetprefs%3Fsig%3D0_Jpyij7DcLxH2ODDZMrfb2mZzZqI%253D%26hl%3Dca%26source%3Dhomepage&usg=AOvVaw0RHk-HLjsK3gWDxkwsIceQ">catalá</a>
         <a href="https://www.google.es/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiuhPCZkaDXAhUHcRQKHWtSCVwQ2ZgBCA0&url=https%3A%2F%2Fwww.google.es%2Fsetprefs%3Fsig%3D0_Jpyij7DcLxH2ODDZMrfb2mZzZqI%253D%26hl%3Dgl%26source%3Dhomepage&usg=AOvVaw1NSwbfUvezaX82iGFxXnly">galego</a>
         <a href="https://www.google.es/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiuhPCZkaDXAhUHcRQKHWtSCVwQ2ZgBCA4&url=https%3A%2F%2Fwww.google.es%2Fsetprefs%3Fsig%3D0_Jpyij7DcLxH2ODDZMrfb2mZzZqI%253D%26hl%3Deu%26source%3Dhomepage&usg=AOvVaw1blQM2nJUxnoZ11xTKn0bA">euskera</a>
       </div>
     </div>
     <footer>
-      <div class="country">España</div>
-      <div class="lfooter">
-        <ul>
-          <li><a href="https://www.google.es/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiuhPCZkaDXAhUHcRQKHWtSCVwQkdQCCBI&url=https%3A%2F%2Fwww.google.es%2Fintl%2Fes_es%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw32OSaGaGe7DJNmQhiJukQa">Publicidad</a></li>
-          <li><a href="https://www.google.es/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiuhPCZkaDXAhUHcRQKHWtSCVwQktQCCBM&url=https%3A%2F%2Fwww.google.es%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw0FXKdAl1PWoWqTTHNYp-My">Empresa</a></li>
-          <li><a href="https://www.google.es/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiuhPCZkaDXAhUHcRQKHWtSCVwQkNQCCBQ&url=https%3A%2F%2Fwww.google.es%2Fintl%2Fes_es%2Fabout%2F%3Futm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dhp-footer%26fg%3D1&usg=AOvVaw03Uti4p9F4ImM4we_iPBul">Acerca de</a></li>
-        </ul>
+      <div class="country">
+        <span class="country__name">España</span>
       </div>
-      <div class="rfooter">
-        <ul>
-          <li><a href="https://www.google.es/intl/es_es/policies/privacy/?fg=1">Privacidad</a></li>
-          <li><a href="https://www.google.es/intl/es_es/policies/terms/?fg=1">Condiciones</a></li>
-          <li><a href="https://www.google.es/preferences?hl=es">Configuración</a></li>
-          <li><a href="https://www.google.com/?gfe_rd=cr&dcr=0&ei=IjD7WajEI8-p8wfOu7LABQ&gws_rd=cr&fg=1">Usar Google.com</a></li>
-        </ul>
+      <div class="fbar">
+        <span class="fbar__left">
+          <ul class="fbar__menu toolbar">
+            <li>
+              <a class="toolbar__link" href="https://www.google.es/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiuhPCZkaDXAhUHcRQKHWtSCVwQkdQCCBI&url=https%3A%2F%2Fwww.google.es%2Fintl%2Fes_es%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw32OSaGaGe7DJNmQhiJukQa">Publicidad</a>
+            </li>
+            <li>
+              <a class="toolbar__link" href="https://www.google.es/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiuhPCZkaDXAhUHcRQKHWtSCVwQktQCCBM&url=https%3A%2F%2Fwww.google.es%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw0FXKdAl1PWoWqTTHNYp-My">Empresa</a>
+            </li>
+            <li>
+              <a class="toolbar__link" href="https://www.google.es/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiuhPCZkaDXAhUHcRQKHWtSCVwQkNQCCBQ&url=https%3A%2F%2Fwww.google.es%2Fintl%2Fes_es%2Fabout%2F%3Futm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dhp-footer%26fg%3D1&usg=AOvVaw03Uti4p9F4ImM4we_iPBul">Acerca de</a>
+            </li>
+          </ul>
+        </span>
+        <span class="fbar__right">
+          <ul class="fbar__menu toolbar toolbar--color-grey">
+            <li>
+              <a class="toolbar__link" href="https://www.google.es/intl/es_es/policies/privacy/?fg=1">Privacidad</a>
+            </li>
+            <li>
+              <a class="toolbar__link" href="https://www.google.es/intl/es_es/policies/terms/?fg=1">Condiciones</a>
+            </li>
+            <li>
+              <a class="toolbar__link" href="https://www.google.es/preferences?hl=es">Configuración</a>
+            </li>
+            <li>
+              <a class="toolbar__link" href="https://www.google.com/?gfe_rd=cr&dcr=0&ei=IjD7WajEI8-p8wfOu7LABQ&gws_rd=cr&fg=1">Usar Google.com</a>
+            </li>
+          </ul>
+        </span>
       </div>
     </footer>
   </body>
